@@ -3,6 +3,7 @@ IdrisController = require './idris-controller'
 IdrisModel = require './idris-model'
 {CompositeDisposable} = require 'atom'
 utils = require './utils'
+autocompleteProvider = require './autocomplete-provider'
 
 module.exports =
   config:
@@ -42,3 +43,7 @@ module.exports =
   deactivate: ->
     @subscriptions.dispose()
     this.controller.destroy()
+
+  provideAutocompletion: ->
+    debugger
+    autocompleteProvider

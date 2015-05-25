@@ -20,6 +20,13 @@
       }
     }
   },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocompletion"
+      }
+    }
+  },
   "dependencies": {
     "atom-message-panel": ">=0.1.0",
     "atom-space-pen-views": "^2.0.3",
